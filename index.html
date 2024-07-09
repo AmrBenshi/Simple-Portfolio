@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Responsive Website Using HTML CSS" />
+  <!-- font-awesome link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Main CSS File -->
+  <link rel="stylesheet" href="CSS/style.css" />
+  <!-- Render all elements normally -->
+  <link rel="stylesheet" href="CSS/normalize.css" />
+  <!-- google fonts file -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,400;0,700;0,800;1,200;1,400;1,700;1,800&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="Img/favicon.ico" />
+
+  <title>Amr S.B</title>
+</head>
+
+<body>
+  <!-- Header code -->
+  <header id="header">
+    <a href="#">
+      <div class="logo">
+        <i class="fa-solid fa-code"></i>
+        <div class="logo-content">
+          <div>Amr <br />S.B</div>
+        </div>
+      </div>
+    </a>
+    <div style="margin-right: 1em">
+      <input type="checkbox" class="checkbox" id="checkbox" />
+      <label for="checkbox" class="checkbox-label">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <span class="ball"></span>
+      </label>
+    </div>
+    <nav>
+      <a href="#home" class="nav-links">Home</a>
+      <a href="#Serveices" class="nav-links">Serveices</a>
+      <a href="#Team" class="nav-links">Team</a>
+      <a href="#Contact" class="nav-links">Contact</a>
+    </nav>
+  </header>
+  <!-- Header code -->
+  <!-- Landing page code -->
+  <section class="landing" id="home">
+    <div class="landing-content">
+      <p>Hi There , I'm Amr Benshi</p>
+      <h1>Web Developer</h1>
+      <a href="#Team" class="btn">show my team</a>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+    <img src="Img/wdVector.svg" class="vector" alt="Web Developer vector" />
+  </section>
+  <!-- Landing page code -->
+  <!-- Serveices code -->
+  <section class="card-container" id="Serveices">
+    <h1 class="sec-title">Serveices</h1>
+    <div class="cards">
+      <div class="card-wrap">
+        <div class="card-header one">
+          <i class="fa-brands fa-figma"></i>
+        </div>
+        <div class="card-content">
+          <h1 class="card-title">
+            UI/UX <br />
+            Design
+          </h1>
+          <p class="card-text">
+            create a positive user experience and user interface that encourages customers to
+            stick with a brand or product.
+          </p>
+        </div>
+      </div>
+      <div class="card-wrap">
+        <div class="card-header two">
+          <i class="fa-brands fa-react"></i>
+        </div>
+        <div class="card-content">
+          <h1 class="card-title">Landing Page Development</h1>
+          <p class="card-text">
+            build responsive , user-friendly , dynamic user interfaces landing page websites.
+          </p>
+        </div>
+      </div>
+      <div class="card-wrap">
+        <div class="card-header three">
+          <i class="fa-brands fa-python"></i>
+        </div>
+        <div class="card-content">
+          <h1 class="card-title">Graphic <br> Design</h1>
+          <p class="card-text">
+            create assets like logos, typography, color palettes and image libraries that represent a brand’s
+            personality
+          </p>
+        </div>
+      </div>
+      <img src="Img/Services.svg" class="vector" />
+    </div>
+  </section>
+  <!-- Serveices code -->
+  <!-- Team code -->
+  <section class="card-container" id="Team">
+    <h1 class="sec-title">We Are ...</h1>
+    <div class="cards">
+      <img src="Img/Team work-amico.svg" class="vector" />
+      <div class="card-wrap">
+        <div class="card-header mem1"></div>
+        <div class="card-content">
+          <h1 class="card-title">Amir Nashed</h1>
+          <p class="card-text">
+            <b>Graphic Designer</b>
+            experience:6 years of Advertisement design
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="card-wrap">
+        <div class="card-header two mem2"></div>
+        <div class="card-content">
+          <h1 class="card-title">Amr Benshi</h1>
+          <p class="card-text">
+            <b>Front-End Developer</b>
+            experience:3 years of creating web interfaces
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="card-wrap">
+        <div class="card-header three mem3"></div>
+        <div class="card-content">
+          <h1 class="card-title">AbdAlFatah Kalaji</h1>
+          <p class="card-text" style="margin-bottom: 0.5em">
+            <b>UI/UX Designer </b>
+            experience:2 years of Designing a creative UI/UX Websites and Apps
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Team code -->
+  <!-- footer code -->
+  <footer id="Contact">
+    <div id="info_container">
+      <span>
+        <h2>address</h2>
+        <p>Aleppo / Al Mohafaza</p>
+      </span>
+      <span>
+        <h2>email</h2>
+        <a href="mailto:amrsaeedbenshi@gmail.com">amrsaeedbenshi@gmail.com</a>
+        <br />
+        <br />
+        <a href="mailto:amrbenshy99@email.com">amrbenshy99@gmail.com</a>
+      </span>
+      <span>
+        <h2>call us</h2>
+        <a href="tel:+963937632581">+963 937 632 581</a> <br />
+        <br />
+        <a href="tel:+963968424439">+963 968 424 439</a>
+      </span>
+    </div>
+    <hr />
+    <p>&copy;2023 by Amr S.B. All rights reserved.</p>
+  </footer>
+  <!-- footer code -->
+  <script src="JS/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,410 @@
+/* global rules  */
+* {
+  box-sizing: border-box;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+:root {
+  --main-color: #802cf5;
+  --color-text: #616161;
+  --card1-gradient-color1: #f12711;
+  --card1-gradient-color2: #f5af19;
+  --card2-gradient-color1: #7f00ff;
+  --card2-gradient-color2: #e100ff;
+  --card3-gradient-color1: #3f2b96;
+  --card3-gradient-color2: #a8c0ff;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+section {
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+section .sec-title {
+  font-size: 3.2em;
+  color: var(--main-color);
+  margin-bottom: 1em;
+}
+/* global rules  */
+/* ================================ */
+
+/* start of header style */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bolder;
+  position: fixed;
+  width: 100vw;
+  z-index: 99999;
+  font-size: 1.2em;
+  padding: 1em 0.75em;
+}
+header.scrolling {
+  background: url(../Img/home-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 3.5em;
+}
+header .logo {
+  color: white;
+  font-family: "Bruno Ace SC", cursive;
+  display: flex;
+}
+header .logo i {
+  color: var(--main-color);
+  font-size: 2.1em;
+  margin: auto 0.3em;
+}
+header .logo .logo-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*  */
+body.dark {
+  background-color: rgb(18 18 18);
+}
+body.dark .card-wrap {
+  background-color: rgb(18 18 18);
+  box-shadow: rgb(80 80 80) 3px 3px 7px 0px;
+  color: #d7d7d7;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fa-moon {
+  color: #f1c40f;
+}
+.fa-sun {
+  color: #f39c12;
+}
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+  -webkit-transform: translateX(24px);
+  -moz-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  -o-transform: translateX(24px);
+}
+header nav {
+  display: none;
+}
+header .nav-links {
+  font-size: 1.25em;
+  margin: 0 2em;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+header .nav-links:hover {
+  color: var(--main-color);
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 980px) {
+  header{
+    padding: 1em 4em;
+  }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav .nav-links {
+    font-size: 1.1em;
+  }
+}
+/* end of header style */
+/* start of home style */
+section.landing {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  font-size: 1.3em;
+  background: url(../Img/home-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+section.landing .landing-content {
+  width: 100%;
+  text-align: center;
+}
+.vector {
+  display: none;
+}
+section.landing a.btn {
+  background-color: var(--main-color);
+  font-size: 0.88em;
+  padding: 0.7em;
+  margin-bottom: 1em;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+section.landing a.btn:hover {
+  background-color: #2b0068;
+}
+section.landing .social-icons {
+  position: relative;
+  top: 1em;
+  margin: 1em 0;
+}
+section.landing .social-icons a {
+  margin: 0 6px;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+section.landing .social-icons a:hover {
+  color: var(--main-color);
+}
+section.landing .social-icons::before {
+  content: "";
+  width: 100%;
+  height: 0.12em;
+  margin-right: 15px;
+  border: 2px solid var(--main-color);
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  section.landing {
+    padding: 4em;
+    font-size: 1.35em;
+  }
+  section.landing .landing-content {
+    text-align: start;
+    width: auto;
+  }
+  .vector {
+    display: block;
+    width: 40%;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .vector {
+    width: 30%;
+  }
+  section.landing {
+    font-size: 1.5em;
+  }
+}
+/* end of home section style */
+/* Start of Services section style */
+section.card-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4em;
+}
+.cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+.card-wrap {
+  width: 14em;
+  height: 23em;
+  background: #fff;
+  color: var(--color-text);
+  box-shadow: rgba(0, 0, 0, 0.19) 0 0.7em 1.2em,
+    rgba(0, 0, 0, 0.23) 0 0.4em 0.4em;
+  border-radius: 0em 0em 1.25em 1.25em;
+  -webkit-border-radius: 0em 0em 1.25em 1.25em;
+  -moz-border-radius: 0em 0em 1.25em 1.25em;
+  -ms-border-radius: 0em 0em 1.25em 1.25em;
+  -o-border-radius: 0em 0em 1.25em 1.25em;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+.card-wrap:hover {
+  transform: scale(1.1);
+}
+.card-header {
+  height: 12.5em;
+  width: 100%;
+  border-radius: 100% 0% 100% 0% / 0% 50% 50% 100%;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1em;
+}
+
+.card-header i {
+  color: #fff;
+  font-size: 4.5em;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.card-title {
+  color: var(--main-color);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1em;
+  margin-top: 0.7em;
+  margin-bottom: 1.25em;
+}
+.card-text {
+  text-align: center;
+  font-size: 0.8em;
+  margin-bottom: 1.4em;
+}
+.card-header.one {
+  background: linear-gradient(
+    to bottom left,
+    var(--card1-gradient-color1),
+    var(--card1-gradient-color2)
+  );
+}
+.card-header.two {
+  background: linear-gradient(
+    to bottom left,
+    var(--card2-gradient-color1),
+    var(--card2-gradient-color2)
+  );
+}
+.card-header.three {
+  background: linear-gradient(
+    to bottom left,
+    var(--card3-gradient-color1),
+    var(--card3-gradient-color2)
+  );
+}
+.cards .vector {
+  display: none;
+}
+@media only screen and (min-width: 1030px) {
+  .cards .vector {
+    display: block;
+  }
+}
+/* end of Services section style */
+/* Start of Team section style */
+.card-header.mem1 {
+  background: url(../Img/Amir\ Nashed.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card-header.mem2 {
+  background: url(../Img/Amr\ S.Benshi.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card-header.mem3 {
+  background: url(../Img/AbdAlFatah.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card-content .social-icons a {
+  font-size: 1.4em;
+  color: var(--main-color);
+}
+
+/* end of Team section style */
+/* start of footer style */
+#info_container {
+  padding: 25px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#info_container span {
+  margin: 10px;
+}
+footer,
+footer a {
+  color: #b4b4b4;
+  text-align: center;
+  background: url(../Img/home-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+footer a:hover {
+  color: var(--main-color);
+}
+footer div {
+  padding: 60px 80px;
+  display: flex;
+  justify-content: space-around;
+}
+footer div h2 {
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: bolder;
+  border-bottom: 4px solid var(--main-color);
+}
+footer > p {
+  letter-spacing: 3px;
+  font-weight: bolder;
+  padding: 15px;
+}
+/* end of footer style */
