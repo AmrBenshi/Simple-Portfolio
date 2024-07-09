@@ -387,7 +387,7 @@ section.card-container {
 .project-card {
   width: 22em;
   margin: 2em 0.65em;
-  box-shadow: 0px 0px 10px 0px #d738ff;
+  box-shadow: 0px 0px 10px 0px #a3a3a3 ;
   position: relative;
   display: block;
   overflow: hidden;
@@ -404,7 +404,7 @@ section.card-container {
   -o-border-radius: 5px 5px 45px 45px;
 }
 .project-card:hover {
-  box-shadow: 0px 0px 20px 8px #d738ff;
+  transform: scale(1.1);
 }
 @media (max-width: 375px) {
   .project-card {
