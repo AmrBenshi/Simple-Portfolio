@@ -29,6 +29,7 @@ section {
   margin-right: auto;
 }
 section .sec-title {
+  text-shadow: 13px 8px 32px var(--main-color);
   font-size: 3.2em;
   color: var(--main-color);
   margin-bottom: 1em;
