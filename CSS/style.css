@@ -87,7 +87,7 @@ body.dark .card-wrap {
   position: absolute;
 }
 .checkbox-label {
-  background-color: #111;
+  background-color: #fff;
   width: 50px;
   height: 26px;
   border-radius: 50px;
@@ -98,6 +98,12 @@ body.dark .card-wrap {
   justify-content: space-between;
   align-items: center;
 }
+.checkbox-label.dark{
+  background-color: #000;
+}
+.checkbox-label.dark .ball{
+  background-color: #fff;
+}
 .fa-moon {
   color: #f1c40f;
 }
@@ -105,7 +111,7 @@ body.dark .card-wrap {
   color: #f39c12;
 }
 .checkbox-label .ball {
-  background-color: #fff;
+  background-color: #585757;
   width: 22px;
   height: 22px;
   position: absolute;
