@@ -381,7 +381,9 @@ section.card-container {
   justify-content: space-around;
   align-content: center;
 }
-
+.dark .project-card{
+  background-color: #2a2a2a;
+}
 .project-card {
   width: 22em;
   margin: 2em 0.65em;
@@ -495,9 +497,9 @@ footer a:hover {
   color: var(--main-color);
 }
 footer div {
-  padding: 60px 80px;
+  /* padding: 60px 80px; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 footer div h2 {
   padding-bottom: 8px;
@@ -510,5 +512,15 @@ footer > p {
   letter-spacing: 3px;
   font-weight: bolder;
   padding: 15px;
+}
+.footer-social-icons div{
+  justify-content: space-around;
+}
+.footer-social-icons{
+    height: 4em;
+  font-size: 2em;
+  justify-content: space-evenly;
+  padding: 0;
+  flex-direction: column;
 }
 /* end of footer style */
