@@ -138,7 +138,7 @@ header .nav-links:hover {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 980px) {
-  header{
+  header {
     padding: 1em 4em;
   }
   header nav {
@@ -362,6 +362,103 @@ section.card-container {
 }
 
 /* end of Team section style */
+/* start of Projects style */
+/*.single-featured-car*/
+.project-cards {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.project-card {
+  width: 22em;
+  margin: 2em 0.65em;
+  box-shadow: 0px 0px 10px 0px #d738ff;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  border-radius: 5px 5px 45px 45px;
+  -webkit-border-radius: 5px 5px 45px 45px;
+  -moz-border-radius: 5px 5px 45px 45px;
+  -ms-border-radius: 5px 5px 45px 45px;
+  -o-border-radius: 5px 5px 45px 45px;
+}
+.project-card:hover {
+  box-shadow: 0px 0px 20px 8px #d738ff;
+}
+@media (max-width: 375px) {
+  .project-card {
+    width: 18em;
+  }
+}
+.card__image {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 3px 0px #b1b1b1;
+}
+
+.card__overlay {
+  border-radius: calc(var(--curve) * 1px);
+  background-color: var(--surface-color);
+  transform: translateY(100%);
+  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+}
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 1em 2em 2em 2em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: 0.2s ease-in-out;
+}
+
+.card__title {
+  font-size: 1.2em;
+  margin: 0 0 0.3em;
+  color: #cd05ff;
+}
+
+.card__status {
+  font-size: 0.8em;
+  color: #a3a3a3;
+}
+.card__header-text {
+  width: 100%;
+}
+.gradient-button {
+  padding: 10px 20px;
+  display: block;
+  text-align: center;
+  margin-top: 1em;
+  font-size: 16px;
+  border: none;
+  width: 100%;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #8100a1, #812ace, #6168f7);
+  color: white;
+}
+.more {
+  width: 94%;
+}
+/* end of projects section style */
 /* start of footer style */
 #info_container {
   padding: 25px;
