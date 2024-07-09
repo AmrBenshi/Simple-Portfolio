@@ -29,7 +29,7 @@ section {
   margin-right: auto;
 }
 section .sec-title {
-  text-shadow: 13px 8px 32px var(--main-color);
+  text-shadow: 0 0 45px var(--main-color);
   font-size: 3.2em;
   color: var(--main-color);
   margin-bottom: 1em;
@@ -75,11 +75,11 @@ header .logo .logo-content {
 }
 /*  */
 body.dark {
-  background-color: rgb(18 18 18);
+  background-color: #181818;
 }
 body.dark .card-wrap {
-  background-color: rgb(18 18 18);
-  box-shadow: rgb(80 80 80) 3px 3px 7px 0px;
+  background-color: #2a2a2a;
+  box-shadow: rgb(122, 122, 122) 3px 3px 7px 0px;
   color: #d7d7d7;
 }
 .checkbox {
