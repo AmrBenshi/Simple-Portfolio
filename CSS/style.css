@@ -73,6 +73,15 @@ header .logo .logo-content {
   justify-content: center;
   align-items: center;
 }
+.language-btn {
+  border: 3px solid white;
+  padding: .25em .7em;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
 @media only screen and (max-width: 1352px) {
   header {
     font-size: 0.99em;
