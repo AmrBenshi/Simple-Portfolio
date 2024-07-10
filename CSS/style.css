@@ -73,6 +73,17 @@ header .logo .logo-content {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 1352px) {
+  header {
+    font-size: 0.99em;
+  }
+}
+@media only screen and (max-width: 1008px) {
+  header {
+    font-size: 1.2em;
+  }
+}
+
 /*  */
 body.dark {
   background-color: #181818;
@@ -98,10 +109,10 @@ body.dark .card-wrap {
   justify-content: space-between;
   align-items: center;
 }
-.checkbox-label.dark{
+.checkbox-label.dark {
   background-color: #000;
 }
-.checkbox-label.dark .ball{
+.checkbox-label.dark .ball {
   background-color: #fff;
 }
 .fa-moon {
@@ -381,13 +392,13 @@ section.card-container {
   justify-content: space-around;
   align-content: center;
 }
-.dark .project-card{
+.dark .project-card {
   background-color: #2a2a2a;
 }
 .project-card {
   width: 22em;
   margin: 2em 0.65em;
-  box-shadow: 0px 0px 10px 0px #a3a3a3 ;
+  box-shadow: 0px 0px 10px 0px #a3a3a3;
   position: relative;
   display: block;
   overflow: hidden;
@@ -513,11 +524,11 @@ footer > p {
   font-weight: bolder;
   padding: 15px;
 }
-.footer-social-icons div{
+.footer-social-icons div {
   justify-content: space-around;
 }
-.footer-social-icons{
-    height: 4em;
+.footer-social-icons {
+  height: 4em;
   font-size: 2em;
   justify-content: space-evenly;
   padding: 0;
